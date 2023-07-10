@@ -101,7 +101,7 @@ def main(
         ],
         title="ChatLaw Academic Demo",
         description="",
-    ).queue().launch(server_name="0.0.0.0",server_port=1234,share=True)
+    ).queue().launch(share=True)
 
 
 if __name__ == "__main__":
