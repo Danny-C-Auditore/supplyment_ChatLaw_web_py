@@ -19,7 +19,8 @@ def main(
     tokenizer = LlamaTokenizer.from_pretrained(model)
     model = LlamaForCausalLM.from_pretrained(
         model,
-        torch_dtype=torch.float16,
+        #    torch_dtype=torch.float16,
+        torch_dtype=torch.float32,
         device_map="auto",
     )
         
